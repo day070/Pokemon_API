@@ -26,7 +26,9 @@ function fetchPokemonList(offset) {
 
               const listItem = document.createElement("li");
               listItem.innerHTML = `
-                <img src="${imgSrc}" alt="${pokemonData.name}" class="pokemon-image"/>
+              <div class="img-container">
+              <img src="${imgSrc}" alt="${pokemonData.name}" class="pokemon-image"/>
+              </div>
                 <p onclick="detail('${pokemon.url}')">${pokemonData.name}</p>
               `;
               pokemonListElement.appendChild(listItem);
